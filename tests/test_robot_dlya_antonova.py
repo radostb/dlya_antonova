@@ -1,16 +1,12 @@
 from robot_dlya_antonova.robot import order, cancel_all, authorization
-# from tests.utils import call_api
-# import tests.utils as test
+
 import unittest
 import aiounittest
 import json
 import yaml
 import websockets
 import asyncio
-# import json
 
-# def test_version():
-    # assert __version__ == '0.1.0'
 class Tests(aiounittest.AsyncTestCase):
 
 
@@ -67,6 +63,3 @@ class Tests(aiounittest.AsyncTestCase):
 				await ws.close()
 			self.assertEqual(result, 1)
 
-# if __name__ == '__main__':
-# 	asyncio.get_event_loop().run_until_complete(call_api())
-# 	unittest.main()
